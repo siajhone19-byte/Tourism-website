@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    background-color: #8d8983;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    border-top: 5px solid #493e38;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.header-container {
+    width: 85%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 8px 5px;
+
+    transition: 0.3s;
+}
+
+
+.navbar a:hover {
+    color: #6b4226;
+}
+
+
+.navbar a:focus {
+    color: #cca61b;
+    outline: 2px solid #cca61b;
+    outline-offset: 3px;
+}
+
+
+/* ================= HOME ================= */
+
+.title {
+    background-color: #29434d;
+
+    text-align: center;
+
+    padding: 90px 20px;
+
+    margin-bottom: 40px;
+}
+
+
+.title h1 {
+    font-size: 55px;
+    font-weight: 900;
+
+    color: #cca61b;
+
+    margin-bottom: 15px;
+}
+
+
+.title p {
+    font-size: 18px;
+    color: white;
+}
+
+
+/* ================= GENERAL SECTIONS ================= */
+
+section {
+    width: 90%;
+
+    margin: 0 auto 40px;
+
+    padding: 40px 30px;
+
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.93);
+
+    box-shadow:
+        0 0 12px rgba(0, 0, 0, 0.12);
+}
+
+
+section h2 {
+    text-align: center;
+
+    color: #493e38;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+
+.section-description {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================= DESTINATIONS ================= */
+
+.destination-list {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.destination-item {
+    width: 30%;
+
+    min-width: 250px;
+
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+
+.destination-item:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================= DESTINATION IMAGE ================= */
+
+.destination-img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= DESTINATION INFORMATION ================= */
+
+.destination-info {
+    text-align: center;
+}
+
+
+.destination-info h3 {
+    color: #493e38;
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.destination-info p {
+    color: #555;
+
+    font-size: 15px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= DESTINATION BUTTON ================= */
+
+.destination-btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: #6b4226;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.destination-btn:hover {
+    background-color: #493e38;
+
+    transform: scale(1.05);
+}
+
+
+.destination-btn:focus {
+    outline: 3px solid #cca61b;
+
+    outline-offset: 3px;
+}
+
+
+/* ================= TOUR TABLE ================= */
+
+.table-container {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+.tour-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+    background-color: white;
+}
+
+
+.tour-table th,
+.tour-table td {
+    border: 1px solid #ccc;
+
+    padding: 15px;
+
+    text-align: center;
+}
+
+
+.tour-table th {
+    background-color: #29434d;
+
+    color: white;
+
+    font-size: 16px;
+}
+
+
+.tour-table tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+
+.tour-table tr:hover {
+    background-color: #e8e0d8;
+}
+
+
+/* ================= BOOKING FORM ================= */
+
+.booking-form {
+    width: 600px;
+
+    max-width: 100%;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.form-group label {
+    font-weight: bold;
+
+    color: #493e38;
+}
+
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    background-color: white;
+}
+
+
+/* ================= FOCUS EFFECT ================= */
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+
+    border: 2px solid #cca61b;
+
+    box-shadow:
+        0 0 6px rgba(204, 166, 27, 0.4);
+}
+
+
+/* ================= BOOK BUTTON ================= */
+
+.book-btn {
+    border: none;
+
+    background-color: #6b4226;
+
+    color: white;
+
+    padding: 13px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.book-btn:hover {
+    background-color: #493e38;
+
+    transform: translateY(-2px);
+}
+
+
+.book-btn:focus {
+    outline: 3px solid #cca61b;
+
+    outline-offset: 3px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-section p {
+    max-width: 800px;
+
+    margin: 10px auto;
+
+    text-align: center;
+
+    color: #555;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    text-align: center;
+}
+
+
+.contact-section p {
+    margin: 8px;
+
+    color: #555;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #6b4226;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .header {
+        height: auto;
+    }
+
+
+    .header-container {
+        width: 95%;
+
+        flex-direction: column;
+
+        padding: 15px;
+    }
+
+
+    /* NAVIGATION */
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 5px;
+
+        text-align: center;
+
+        margin-top: 15px;
+
+        width: 100%;
+    }
+
+
+    .navbar a {
+        width: 100%;
+
+        padding: 10px;
+
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    /* HOME */
+
+    .title {
+        padding: 60px 15px;
+    }
+
+
+    .title h1 {
+        font-size: 35px;
+    }
+
+
+    .title p {
+        font-size: 16px;
+    }
+
+
+    /* SECTIONS */
+
+    section {
+        width: 95%;
+
+        padding: 30px 15px;
+    }
+
+
+    /* DESTINATIONS */
+
+    .destination-list {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .destination-item {
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+
+    .destination-img {
+        height: 230px;
+    }
+
+
+    /* TABLE */
+
+    .tour-table {
+        min-width: 600px;
+    }
+
+
+    /* BOOKING */
+
+    .booking-form {
+        width: 100%;
+    }
+
+
+    /* TEXT */
+
+    section h2 {
+        font-size: 27px;
+    }
+
+}
